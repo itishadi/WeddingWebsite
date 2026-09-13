@@ -1,15 +1,3 @@
-//using Microsoft.AspNetCore.Mvc;
-//using Microsoft.AspNetCore.Mvc.RazorPages;
-
-//namespace WeddingWebsite.Pages
-//{
-//    public class GuestListModel : PageModel
-//    {
-//        public void OnGet()
-//        {
-//        }
-//    }
-//}
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using WeddingWebsite.Models;
 
