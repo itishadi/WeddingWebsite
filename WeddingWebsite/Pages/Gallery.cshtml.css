@@ -1,0 +1,147 @@
+﻿
+.wedding-gallery {
+    min-height: 100vh;
+    padding: 70px 7%;
+    background: radial-gradient(circle at top left, #fff 0, transparent 35%), linear-gradient(135deg, #fffaf7, #f7eee9);
+}
+
+.gallery-header {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.gallery-subtitle {
+    display: block;
+    margin-bottom: 10px;
+    color: #b28776;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.gallery-header h1 {
+    margin: 0 0 15px;
+    color: #493b36;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+}
+
+    .gallery-header h1::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 2px;
+        margin: 20px auto 0;
+        background-color: #c9a998;
+    }
+
+.gallery-header p {
+    margin: 20px 0 0;
+    color: #786963;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.gallery-grid {
+    display: grid;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+    gap: 18px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    border: 8px solid rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+    background-color: #eee4df;
+    box-shadow: 0 12px 35px rgba(85, 61, 51, 0.12);
+}
+
+    .gallery-item::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient( to top, rgba(49, 33, 28, 0.25), transparent 45% );
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .gallery-item:hover::after {
+        opacity: 1;
+    }
+
+    .gallery-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease, filter 0.6s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.06);
+        filter: brightness(0.92);
+    }
+
+.gallery-item-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-item-tall {
+    grid-row: span 2;
+}
+
+.gallery-item-wide {
+    grid-column: span 2;
+}
+
+/* Surfplatta */
+@media (max-width: 900px) {
+    .wedding-gallery {
+        padding: 55px 5%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+    .wedding-gallery {
+        padding: 40px 18px;
+    }
+
+    .gallery-header {
+        margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 320px;
+        gap: 14px;
+    }
+
+    .gallery-item-large,
+    .gallery-item-tall,
+    .gallery-item-wide {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .gallery-item {
+        border-width: 6px;
+    }
+}
+

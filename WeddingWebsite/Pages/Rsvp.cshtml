@@ -1,0 +1,115 @@
+﻿@page
+@model RsvpModel
+
+<section class="rsvp-page">
+
+    <div class="rsvp-container">
+
+        <header class="rsvp-header">
+            <span class="rsvp-subtitle">Vi hoppas att du kommer</span>
+
+            <h1>OSA</h1>
+
+            <div class="flourish">♡</div>
+
+            <p>
+                Vi skulle bli så glada om du vill fira vår stora dag
+                tillsammans med oss.
+            </p>
+        </header>
+
+
+        <div class="rsvp-card">
+
+            <form method="post" class="rsvp-form">
+
+                <div class="form-group">
+                    <label asp-for="Guest.Name">Ditt namn</label>
+
+                    <input asp-for="Guest.Name"
+                           placeholder="För- och efternamn" />
+
+                    <span asp-validation-for="Guest.Name"
+                          class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="Guest.Email">E-post</label>
+
+                    <input asp-for="Guest.Email"
+                           type="email"
+                           placeholder="din@email.se" />
+
+                    <span asp-validation-for="Guest.Email"
+                          class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group attendance-group">
+
+                    <span class="form-label">
+                        Kommer du?
+                    </span>
+
+                    <div class="attendance-options">
+
+                        <label class="attendance-option">
+                            <input asp-for="Guest.WillAttend"
+                                   type="radio"
+                                   value="true" />
+
+                            <span>
+                                Ja, med glädje! ♡
+                            </span>
+                        </label>
+
+                        <label class="attendance-option">
+                            <input asp-for="Guest.WillAttend"
+                                   type="radio"
+                                   value="false" />
+
+                            <span>
+                                Tyvärr inte
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <span asp-validation-for="Guest.WillAttend"
+                          class="text-danger"></span>
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Guest.Message">
+                        Meddelande
+                    </label>
+
+                    <textarea asp-for="Guest.Message"
+                              placeholder="Skriv ett meddelande till oss..."
+                              rows="5"></textarea>
+
+                    <span asp-validation-for="Guest.Message"
+                          class="text-danger"></span>
+                </div>
+
+
+                <button type="submit" class="rsvp-button">
+                    Skicka OSA
+                    <span>♡</span>
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="rsvp-footer">
+            <span>Med kärlek</span>
+            <div>♡</div>
+        </div>
+
+    </div>
+
+</section>

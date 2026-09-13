@@ -1,0 +1,108 @@
+﻿@page
+@model EventModel
+
+<section class="event-page">
+
+    <div class="event-container">
+
+        <header class="event-header">
+
+            <span class="event-subtitle">
+                Vår speciella dag
+            </span>
+
+            <h1>
+                @Model.EventInfo.Title
+            </h1>
+
+            <div class="event-heart">♡</div>
+
+            <p>
+                Vi ser fram emot att dela denna speciella dag
+                med våra nära och kära.
+            </p>
+
+        </header>
+
+
+        <div class="event-details">
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    ♡
+                </div>
+
+                <span class="event-label">
+                    Datum
+                </span>
+
+                <h2>
+                    @Model.EventInfo.Date
+                </h2>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    ♧
+                </div>
+
+                <span class="event-label">
+                    Tid
+                </span>
+
+                <h2>
+                    @Model.EventInfo.Time
+                </h2>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    ♧
+                </div>
+
+                <span class="event-label">
+                    Plats
+                </span>
+
+                <h2>
+                    @Model.EventInfo.Location
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="event-message">
+
+            <p>
+                En dag fylld av kärlek, glädje och vackra minnen.
+            </p>
+
+            <span>
+                Vi längtar efter att fira med dig
+            </span>
+
+        </div>
+
+
+        <div class="event-action">
+
+            <a asp-page="/Rsvp" class="event-button">
+                OSA
+                <span>♡</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+

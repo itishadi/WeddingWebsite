@@ -1,0 +1,222 @@
+﻿.confirmation-page {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background: radial-gradient( circle at top left, #ffffff 0, transparent 35% ), linear-gradient( 135deg, #fffaf7, #f7eee9 );
+    color: #493b36;
+}
+
+.confirmation-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.confirmation-card {
+    padding: 70px 60px;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid rgba(194, 161, 146, 0.35);
+    box-shadow: 0 20px 60px rgba(85, 61, 51, 0.12);
+    text-align: center;
+}
+
+/* Heart */
+
+.confirmation-heart {
+    margin-bottom: 20px;
+    color: #b28776;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+/* Subtitle */
+
+.confirmation-subtitle {
+    display: block;
+    margin-bottom: 15px;
+    color: #b28776;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* Heading */
+
+.confirmation-card h1 {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #493b36;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+/* Decorative line */
+
+.confirmation-line {
+    width: 70px;
+    height: 2px;
+    margin: 25px auto;
+    background-color: #c9a998;
+}
+
+/* Main text */
+
+.confirmation-main {
+    margin: 0 0 15px;
+    color: #594943;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.35rem;
+}
+
+.confirmation-text {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #786963;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Guest message */
+
+.guest-message {
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 28px 30px;
+    background: #fffaf7;
+    border: 1px solid rgba(194, 161, 146, 0.35);
+    border-left: 3px solid #b28776;
+    text-align: left;
+}
+
+.guest-message-label {
+    display: block;
+    margin-bottom: 12px;
+    color: #b28776;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.guest-message-line {
+    width: 45px;
+    height: 1px;
+    margin-bottom: 15px;
+    background-color: #c9a998;
+}
+
+.guest-message p {
+    margin: 0;
+    color: #786963;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Bottom decoration */
+
+.confirmation-decoration {
+    margin: 35px 0 25px;
+    color: #b28776;
+    font-size: 1.5rem;
+}
+
+/* Button */
+
+.confirmation-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    color: #ffffff;
+    background: #8f6f62;
+    border: none;
+    border-radius: 2px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .confirmation-button span {
+        font-size: 1rem;
+    }
+
+    .confirmation-button:hover {
+        color: #ffffff;
+        background: #74594f;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(85, 61, 51, 0.18);
+    }
+
+/* Tablet */
+
+@media (max-width: 700px) {
+
+    
+    .confirmation-page {
+        padding: 55px 18px;
+    }
+
+    .confirmation-card {
+        padding: 50px 35px;
+    }
+
+   
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    
+    .confirmation-page {
+        padding: 40px 15px;
+    }
+
+    .confirmation-card {
+        padding: 40px 22px;
+    }
+
+        .confirmation-card h1 {
+            font-size: 2.5rem;
+        }
+
+    .confirmation-text {
+        font-size: 1rem;
+    }
+
+    .guest-message {
+        padding: 22px 20px;
+    }
+
+    .confirmation-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+
+.confirmation-button {
+    padding: 14px 30px;
+    color: white;
+    background: #8f6f62;
+    border: none;
+    border-radius: 2px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+    .confirmation-button:hover {
+        background: #74594f;
+    }

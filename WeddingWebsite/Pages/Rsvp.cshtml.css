@@ -1,0 +1,305 @@
+﻿.rsvp-page {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background: radial-gradient( circle at top left, #ffffff 0, transparent 35% ), linear-gradient( 135deg, #fffaf7, #f7eee9 );
+    color: #493b36;
+}
+
+
+/* Main container */
+
+.rsvp-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.rsvp-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.rsvp-subtitle {
+    display: block;
+    margin-bottom: 12px;
+    color: #b28776;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+.rsvp-header h1 {
+    margin: 0;
+    color: #493b36;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 400;
+}
+
+
+    .rsvp-header h1::after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 2px;
+        margin: 20px auto 0;
+        background-color: #c9a998;
+    }
+
+
+.flourish {
+    margin: 18px 0;
+    color: #b28776;
+    font-size: 1.5rem;
+}
+
+
+.rsvp-header p {
+    max-width: 580px;
+    margin: 0 auto;
+    color: #786963;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+
+/* Card */
+
+.rsvp-card {
+    padding: 45px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(194, 161, 146, 0.35);
+    box-shadow: 0 20px 60px rgba(85, 61, 51, 0.12);
+}
+
+
+/* Form */
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+
+    .form-group label,
+    .form-label {
+        color: #594943;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1rem;
+    }
+
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100%;
+        padding: 14px 16px;
+        box-sizing: border-box;
+        color: #493b36;
+        background: #fffdfc;
+        border: 1px solid #d8c3b8;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #b28776;
+            box-shadow: 0 0 0 3px rgba(178, 135, 118, 0.12);
+        }
+
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #aa9991;
+        }
+
+
+/* Attendance */
+
+.attendance-group {
+    gap: 14px;
+}
+
+
+.attendance-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.attendance-option {
+    flex: 1;
+    min-width: 180px;
+    cursor: pointer;
+}
+
+
+    .attendance-option input {
+        position: absolute;
+        opacity: 0;
+    }
+
+
+    .attendance-option span {
+        display: block;
+        padding: 16px;
+        text-align: center;
+        color: #6e5b54;
+        background: #fffdfc;
+        border: 1px solid #d8c3b8;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+
+    .attendance-option:hover span {
+        border-color: #b28776;
+    }
+
+
+    .attendance-option input:checked + span {
+        color: #ffffff;
+        background: #b28776;
+        border-color: #b28776;
+    }
+
+
+/* Button */
+
+.rsvp-button {
+    align-self: center;
+    margin-top: 10px;
+    padding: 15px 35px;
+    color: #ffffff;
+    background: #8f6f62;
+    border: none;
+    border-radius: 2px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+    .rsvp-button span {
+        margin-left: 8px;
+    }
+
+
+    .rsvp-button:hover {
+        background: #74594f;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(85, 61, 51, 0.18);
+    }
+
+
+/* Footer */
+
+.rsvp-footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #a3877b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+}
+
+
+    .rsvp-footer div {
+        margin-top: 8px;
+        font-size: 1.4rem;
+    }
+
+
+/* Tablet */
+
+@media (max-width: 700px) {
+
+    .rsvp-page {
+        padding: 55px 18px;
+    }
+
+    .rsvp-card {
+        padding: 30px 22px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .rsvp-page {
+        padding: 40px 15px;
+    }
+
+    .rsvp-header {
+        margin-bottom: 30px;
+    }
+
+        .rsvp-header p {
+            font-size: 1rem;
+        }
+
+    .rsvp-card {
+        padding: 25px 18px;
+    }
+
+    .attendance-options {
+        flex-direction: column;
+    }
+
+    .attendance-option {
+        min-width: 0;
+    }
+
+    .rsvp-button {
+        width: 100%;
+    }
+}
+
+.validation-message {
+    display: block;
+    margin-top: 5px;
+    color: #b94a48 !important;
+    font-size: 0.85rem;
+}
+
+.field-validation-error {
+    display: block;
+    margin-top: 5px;
+    color: #b94a48 !important;
+    font-size: 0.85rem;
+}
+
+.input-validation-error {
+    border: 1px solid #b94a48 !important;
+    box-shadow: 0 0 0 2px rgba(185, 74, 72, 0.1);
+}

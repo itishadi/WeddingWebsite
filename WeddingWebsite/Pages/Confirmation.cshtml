@@ -1,0 +1,89 @@
+﻿@page
+@model ConfirmationModel
+
+<section class="confirmation-page">
+
+    ```
+    <div class="confirmation-container">
+
+        <div class="confirmation-card">
+
+            <div class="confirmation-heart">♡</div>
+
+            @if (Model.WillAttend)
+            {
+                <span class="confirmation-subtitle">
+                    Tack så mycket
+                </span>
+
+                <h1>
+                    Vi ses på vår stora dag
+                </h1>
+
+                <div class="confirmation-line"></div>
+
+                <p class="confirmation-main">
+                    Tack @Model.GuestName!
+                </p>
+
+                <p class="confirmation-text">
+                    Din OSA har registrerats och vi är så glada
+                    att du vill fira vår speciella dag tillsammans
+                    med oss.
+                </p>
+            }
+            else
+            {
+                <span class="confirmation-subtitle">
+                    Tack för ditt svar
+                </span>
+
+                <h1>
+                    Vi kommer att sakna dig
+                </h1>
+
+                <div class="confirmation-line"></div>
+
+                <p class="confirmation-main">
+                    Tack @Model.GuestName!
+                </p>
+
+                <p class="confirmation-text">
+                    Vi är ledsna att du inte kan vara med och
+                    fira vår stora dag, men vi uppskattar verkligen
+                    att du tog dig tid att svara.
+                </p>
+            }
+
+            @if (!string.IsNullOrWhiteSpace(Model.GuestMessage))
+            {
+                <div class="guest-message">
+
+                    <span class="guest-message-label">
+                        Ditt meddelande
+                    </span>
+
+                    <div class="guest-message-line"></div>
+
+                    <p>
+                        “@Model.GuestMessage”
+                    </p>
+
+                </div>
+            }
+
+            <div class="confirmation-decoration">
+                ♡
+            </div>
+
+            <form method="get" action="/">
+                <button type="submit" class="confirmation-button">
+                    Tillbaka till startsidan ♡
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+
+</section>

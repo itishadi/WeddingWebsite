@@ -1,0 +1,29 @@
+﻿              RSVP
+                │
+                ▼
+       ┌─────────────────┐
+       │ Namn             │
+       │ Email            │
+       │ Ja / Nej         │
+       │ Meddelande       │
+       └────────┬────────┘
+                │
+        ┌───────┴────────┐
+        │                │
+      FEL              OK
+        │                │
+        ▼                ▼
+  Visa fel på       Confirmation
+  RSVP-sidan             │
+                         │
+                 ┌───────┴───────┐
+                 │               │
+                JA              NEJ
+                 │               │
+                 ▼               ▼
+          "Vi ses på         "Vi kommer
+           vår stora          att sakna
+             dag"               dig"
+
+
+

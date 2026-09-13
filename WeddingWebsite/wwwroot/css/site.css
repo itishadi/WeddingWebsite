@@ -1,0 +1,146 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.wedding-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 7%;
+    text-align: center;
+    background: linear-gradient(rgba(255, 250, 247, 0.78), rgba(247, 238, 233, 0.88)), url('/images/wedding.jpg');
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-subtitle {
+    display: block;
+    margin-bottom: 18px;
+    color: #b28776;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    margin: 0;
+    color: #493b36;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(4rem, 9vw, 7rem);
+    font-weight: 400;
+}
+
+    .hero-content h1 span {
+        color: #c9a998;
+        font-style: italic;
+    }
+
+.hero-date {
+    margin: 20px 0;
+    color: #786963;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 25px auto 35px;
+    color: #786963;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 13px 28px;
+    border: 1px solid #b28776;
+    border-radius: 3px;
+    background-color: #b28776;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+    .hero-button:hover {
+        background-color: #493b36;
+        border-color: #493b36;
+        color: white;
+    }
+
+.hero-button-outline {
+    background-color: transparent;
+    color: #493b36;
+}
+
+    .hero-button-outline:hover {
+        background-color: #b28776;
+        color: white;
+    }
+
+@media (max-width: 600px) {
+
+
+    .wedding-hero {
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+}
