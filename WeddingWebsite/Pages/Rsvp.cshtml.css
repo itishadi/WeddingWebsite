@@ -303,3 +303,18 @@
     border: 1px solid #b94a48 !important;
     box-shadow: 0 0 0 2px rgba(185, 74, 72, 0.1);
 }
+
+.confirmation-button {
+    padding: 14px 30px;
+    color: white;
+    background: #8f6f62;
+    border: none;
+    border-radius: 2px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+    .confirmation-button:hover {
+        background: #74594f;
+    }

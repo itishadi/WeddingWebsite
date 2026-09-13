@@ -3,7 +3,7 @@
 
 <section class="confirmation-page">
 
-    ```
+   
     <div class="confirmation-container">
 
         <div class="confirmation-card">
@@ -69,6 +69,19 @@
                         “@Model.GuestMessage”
                     </p>
 
+                </div>
+            }
+          
+            @if (Model.WillAttend)
+            {
+                <div class="guest-message">
+                    <span class="guest-message-label">
+                        Bröllopsinformation
+                    </span>
+
+                    <p><strong>Datum:</strong> @Model.EventInfo.Date</p>
+                    <p><strong>Tid:</strong> @Model.EventInfo.Time</p>
+                    <p><strong>Plats:</strong> @Model.EventInfo.Location</p>
                 </div>
             }
 

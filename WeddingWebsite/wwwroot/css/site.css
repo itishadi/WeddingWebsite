@@ -144,3 +144,71 @@ body {
         width: 100%;
     }
 }
+
+
+
+
+/*Header*/
+.wedding-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: rgba(255,255,255,0.92);
+    border-bottom: 1px solid rgba(194,161,146,0.35);
+}
+
+.nav-brand {
+    color: #493b36;
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+}
+
+    .nav-links a {
+        color: #594943;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .nav-links a:hover {
+            color: #b28776;
+        }
+
+/*Footer*/
+.wedding-footer {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient( 135deg, #fffaf7, #f7eee9 );
+    border-top: 1px solid rgba(194,161,146,0.35);
+}
+
+.footer-heart {
+    color: #b28776;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.wedding-footer h3 {
+    color: #493b36;
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+.wedding-footer p {
+    color: #786963;
+    max-width: 500px;
+    margin: 10px auto 20px;
+    font-style: italic;
+}
+
+.wedding-footer small {
+    color: #a38c82;
+}

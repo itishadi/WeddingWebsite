@@ -236,3 +236,17 @@
     }
 }
 
+.confirmation-button {
+    padding: 14px 30px;
+    color: white;
+    background: #8f6f62;
+    border: none;
+    border-radius: 2px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+    .confirmation-button:hover {
+        background: #74594f;
+    }

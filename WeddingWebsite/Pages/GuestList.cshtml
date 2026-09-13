@@ -1,0 +1,50 @@
+﻿@page
+@model GuestListModel
+
+<section class="guestlist-page">
+
+    <div class="guestlist-header">
+        <span class="guestlist-subtitle">Våra gäster</span>
+        <h1>RSVP-svar</h1>
+    </div>
+
+    <div class="guestlist-table-wrapper">
+
+        <table class="guestlist-table">
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>Svar</th>
+                    <th>Meddelande</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var guest in Model.Guests)
+                {
+                    <tr>
+                        <td>@guest.Name</td>
+
+                        <td>
+                            @if (guest.WillAttend == true)
+                            {
+                                <span class="attending">Ja ♡</span>
+                            }
+                            else
+                            {
+                                <span class="not-attending">Nej</span>
+                            }
+                        </td>
+
+                        <td>@guest.Message</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</section>
+        <form method="get" action="/">
+            <button type="submit" class="confirmation-button">
+                Tillbaka till startsidan ♡
+            </button>
+        </form>

@@ -11,10 +11,10 @@ namespace WeddingWebsite.Pages
         {
             EventInfo = new Event
             {
-                Title = "Emma & Lucas Wedding",
-                Date = "20 September 2026",
-                Time = "17:00",
-                Location = "Malmö Wedding Hall"
+                Title = "Hasse & Sara Wedding",
+                Date = "20 juni 2027",
+                Time = "15:00",
+                Location = "Stockholm Wedding Hall"
             };
         }
     }
